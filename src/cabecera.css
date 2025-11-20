@@ -1,0 +1,68 @@
+/* Estilos generales */
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0e141b;
+  font-family: "Roboto", sans-serif;
+  color: #e4e6eb;
+}
+
+/* Tarjeta principal */
+.perfil-card {
+  background-color: #161b22;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 157, 0.15);
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 157, 0.25);
+}
+
+/* Texto principal */
+.perfil-nombre {
+  font-size: 1.8rem;
+  color: #00ff9d;
+  margin-bottom: 0.5rem;
+}
+
+.perfil-titulo {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+}
+
+/* Información */
+.perfil-info p {
+  margin: 0.6rem 0;
+  font-size: 1rem;
+}
+
+.perfil-label {
+  color: #00ff9d;
+  font-weight: bold;
+}
+
+a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00ff9d;
+}
+.foto {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ff9d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
