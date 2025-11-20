@@ -1,5 +1,5 @@
 import Cabecera from "./Cabecera"
-// import perfil from "./perfil"
+import Perfil from "./Perfil"
 // import experiencia from "./experiencia"
 // import estudios from "./estudios"
 
@@ -7,6 +7,7 @@ function App() {
   return (
     <>
     <Cabecera />
+    <Perfil />
    
     </>
   )

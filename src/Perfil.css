@@ -1,0 +1,106 @@
+/* Fondo general */
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0e141b;
+  font-family: "Inter", "Roboto", sans-serif;
+  color: #e4e6eb;
+  padding: 2rem;
+}
+
+/* Tarjeta principal */
+.perfil-card {
+  background-color: #161b22;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 255, 157, 0.15);
+  max-width: 750px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 255, 157, 0.25);
+}
+
+/* Título principal */
+.perfil-titulo {
+  color: #00ff9d;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #00ff9d;
+  padding-bottom: 0.3rem;
+  letter-spacing: 1.2px;
+}
+
+/* Descripción personal */
+.perfil-descripcion {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #d1d5db;
+  margin-bottom: 2rem;
+  background-color: #1f2937;
+  padding: 1.2rem 1.5rem;
+  border-left: 4px solid #00ff9d;
+  border-radius: 6px;
+}
+
+.perfil-descripcion strong {
+  color: #00ff9d;
+}
+
+/* Secciones */
+.perfil-seccion {
+  margin-top: 1.8rem;
+}
+
+.perfil-subtitulo {
+  color: #00ff9d;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(0, 255, 157, 0.3);
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+/* Listas */
+.perfil-lista {
+  list-style: none;
+  padding-left: 0;
+}
+
+.perfil-lista li {
+  background-color: #1f2937;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  color: #d1d5db;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.perfil-lista li:hover {
+  background-color: #00ff9d20;
+  transform: translateX(5px);
+}
+
+/* Hobbies */
+.perfil-lista-hobbies li {
+  display: inline-block;
+  margin: 0.4rem 0.6rem;
+  background-color: #212a36;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #9ca3af;
+  transition: all 0.3s ease;
+}
+
+.perfil-lista-hobbies li:hover {
+  background-color: #00ff9d33;
+  color: #00ff9d;
+  transform: scale(1.05);
+}
