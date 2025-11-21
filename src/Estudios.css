@@ -1,0 +1,66 @@
+.estudios-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #0e141b;
+  padding: 2rem;
+  font-family: "Inter", "Roboto", sans-serif;
+  color: #e4e6eb;
+}
+
+.estudios-card {
+  background-color: #161b22;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 255, 157, 0.15);
+  max-width: 700px;
+  width: 100%;
+  text-align: left;
+}
+
+.estudios-titulo {
+  color: #00ff9d;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #00ff9d;
+  padding-bottom: 0.3rem;
+  letter-spacing: 1.2px;
+}
+
+/* Cada estudio */
+.estudio-item {
+  margin-bottom: 2rem;
+  padding: 1rem 1.2rem;
+  background-color: #1f2937;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.estudio-item:hover {
+  box-shadow: 0 0 15px #00ff9d88;
+}
+
+/* Tipo de estudio */
+.estudio-tipo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00ff9d;
+  margin-bottom: 0.4rem;
+}
+
+/* Institución */
+.estudio-institucion {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+/* Fecha */
+.estudio-fecha {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  font-style: italic;
+}

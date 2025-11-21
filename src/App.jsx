@@ -1,7 +1,7 @@
 import Cabecera from "./Cabecera"
 import Perfil from "./Perfil"
 import Experiencia from "./Experiencia"
-// import estudios from "./estudios"
+import Estudios from "./Estudios"
 
 function App() {
   return (
@@ -9,6 +9,8 @@ function App() {
     <Cabecera />
     <Perfil />
     <Experiencia />
+    <Estudios />
+   
    
     </>
   )
