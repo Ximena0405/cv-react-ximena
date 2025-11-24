@@ -45,9 +45,9 @@ export const cvData = {
       fecha: "2024 - Actual"
     },
     {
-      titulo: "Curso de JavaScript Básico",
-      institucion: "Platzi",
-      fecha: "2024"
+      titulo: "Técnico en Analisis y desarrollo de software",
+      institucion: "SENA",
+      fecha: "2022-2023"
     }
   ],
 
