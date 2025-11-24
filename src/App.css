@@ -1,54 +1,220 @@
-/* Reinicio del root que estaba dañando los estilos */
+/* =======================
+   Tipografía general
+   ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9fa;
+  color: #1C1C1C;
+}
+
 #root {
   width: 100%;
   margin: 0;
   padding: 0;
-  text-align: left; /* Muy importante */
+  text-align: left;
 }
 
-/* Centra todas las secciones del CV */
 .app-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  gap: 3rem; /* separación entre secciones */
-  padding-bottom: 4rem;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 1rem;
 }
 
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* =======================
+   Foto de perfil
+   ======================= */
+.foto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.foto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* =======================
+   Perfil general
+   ======================= */
+.perfil-container,
+.perfil-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 2.5rem;
+  max-width: 900px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
-.card {
-  padding: 2em;
+.perfil-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.read-the-docs {
-  color: #888;
+.perfil-nombre {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.perfil-titulo {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin: 0 0 0.8rem 0;
+}
+
+.perfil-info p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+.perfil-label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* =======================
+   Listas aptitudes y hobbies
+   ======================= */
+.perfil-subtitulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #4a4a4a;
+}
+
+.perfil-lista,
+.perfil-lista-hobbies {
+  list-style: none;
+  padding-left: 0;
+}
+
+.perfil-lista li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eaeaea;
+  color: #1c1c1c;
+  font-size: 1rem;
+}
+
+.perfil-lista-hobbies li {
+  border: none;
+  color: #556cd6;
+}
+
+/* =======================
+   Experiencia y Estudios
+   ======================= */
+.exp-container,
+.est-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.exp-card,
+.est-card {
+  background-color: #fefefe;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exp-card:hover,
+.est-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.exp-title,
+.est-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3rem;
+}
+
+.exp-card h3,
+.est-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.exp-card p,
+.est-card p {
+  margin: 0.2rem 0;
+  color: #4a4a4a;
+  font-size: 1rem;
+}
+
+/* =======================
+   Stack Tecnológico
+   ======================= */
+.tecno-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.tecno-card {
+  background-color: #f5f6ff;
+  width: 100%;
+  max-width: 900px;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.tecno-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  border-bottom: 2px solid #d0d0d0;
+  padding-bottom: 0.3rem;
+}
+
+.tecno-subtitulo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #4a4a4a;
+}
+
+.tecno-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.tecno-lista li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #1c1c1c;
+  border-bottom: 1px solid #e0e0e0;
+  transition: 0.2s ease;
+}
+
+.tecno-lista li:hover {
+  color: #556cd6;
+  transform: translateX(3px);
 }
