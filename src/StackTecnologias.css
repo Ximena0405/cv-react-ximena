@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Contenedor general */
+.tecno-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Tarjeta */
+.tecno-card {
+  background-color: #E0E1DD;
+  width: 100%;
+  max-width: 900px;
+  padding: 2.5rem 3rem;
+  border-radius: 8px;
+  color: #0D1B2A;
+}
+
+/* Título principal */
+.tecno-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+  border-bottom: 3px solid #0D1B2A;
+  padding-bottom: 0.5rem;
+}
+
+/* Cada categoría */
+.tecno-grupo {
+  margin-bottom: 2rem;
+}
+
+/* Subtítulos */
+.tecno-subtitulo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #415A77;
+}
+
+/* Lista de tecnologías */
+.tecno-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tecno-lista li {
+  padding: 0.6rem 0.5rem;
+  font-size: 1rem;
+  color: #0D1B2A;
+  border-bottom: 1px solid #778DA9;
+  transition: 0.2s ease;
+}
+
+/* Hover minimalista */
+.tecno-lista li:hover {
+  color: #415A77;
+  transform: translateX(4px);
+}
