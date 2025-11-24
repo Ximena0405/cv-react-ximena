@@ -1,61 +1,42 @@
-/* Fondo y estilo general */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 .experiencia-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #0e141b;
-  font-family: "Inter", "Roboto", sans-serif;
-  color: #e4e6eb;
+  background: #E0E1DD;
   padding: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Tarjeta principal */
 .experiencia-card {
-  background-color: #161b22;
+  background: #FFFFFF;
   padding: 2.5rem 3rem;
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0, 255, 157, 0.15);
-  max-width: 700px;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experiencia-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(0, 255, 157, 0.25);
-}
-
-/* Título */
-.experiencia-titulo {
-  font-size: 1.8rem;
-  color: #00ff9d;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(0, 255, 157, 0.3);
-  display: inline-block;
+  border-radius: 8px;
+  max-width: 900px;
   width: 100%;
-  padding-bottom: 0.3rem;
+  border: 1px solid #D1D1D1;
 }
 
-/* Lista */
+.experiencia-titulo {
+  color: #0D1B2A;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  border-bottom: 2px solid #415A77;
+  padding-bottom: 0.4rem;
+}
+
 .experiencia-lista {
   list-style: none;
   padding: 0;
 }
 
 .experiencia-lista li {
-  background-color: #1f2937;
-  margin-bottom: 1rem;
-  padding: 0.8rem 1.2rem;
-  border-radius: 8px;
-  color: #d1d5db;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #D8D8D8;
+  color: #1A1A1A;
   font-size: 1rem;
-  line-height: 1.5;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.experiencia-lista li:hover {
-  background-color: #00ff9d20;
-  transform: translateX(5px);
 }

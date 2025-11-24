@@ -8,13 +8,16 @@ export default function Experiencia() {
         <h2 className="experiencia-titulo">Experiencia Laboral</h2>
         <ul className="experiencia-lista">
           <li>
-            1
+            Auxiliar de Desarrollo Frontend — DevSoft Junior Lab <br />
+            Febrero 2024 – Mayo 2024
           </li>
           <li>
-            1
+            Practicante de Soporte en Desarrollo Web — TechZone Digital <br />
+            Marzo 2024 – Junio 2022
           </li>
           <li>
-            1
+            Auxiliar de Desarrollo Web — PixelCode Studio <br />
+            Enero 2022 – Diciembre 2023
           </li>
         </ul>
       </div>

@@ -5,7 +5,7 @@ export default function Cabecera() {
   return (
     <section className="perfil-container">
         <div className="foto-container">
-            <img src="" alt="ximena" className="foto" />
+            <img src="public/img/perfil.jpeg" alt="ximena" className="foto" />
         </div>
       <div className="perfil-card">
         <h1 className="perfil-nombre">XIMENA ROLDAN GARCIA</h1>

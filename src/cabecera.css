@@ -1,68 +1,80 @@
-/* Estilos generales */
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* CONTENEDOR GENERAL */
 .perfil-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 4rem auto;
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #0e141b;
-  font-family: "Roboto", sans-serif;
-  color: #e4e6eb;
+  gap: 2.5rem;
+  padding: 2rem;
+  background-color: #E0E1DD; /* gris elegante claro */
+  border-radius: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Tarjeta principal */
+/* FOTO */
+.foto-container {
+  flex-shrink: 0;
+}
+
+.foto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0D1B2A; /* azul oscuro elegante */
+}
+
+/* TARJETA DE INFORMACIÓN */
 .perfil-card {
-  background-color: #161b22;
-  padding: 2rem 3rem;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 255, 157, 0.15);
-  max-width: 600px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: none;  /* sin cajas encima */
+  padding: 0;
+  box-shadow: none;
 }
 
-.perfil-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(0, 255, 157, 0.25);
-}
-
-/* Texto principal */
+/* NOMBRE */
 .perfil-nombre {
-  font-size: 1.8rem;
-  color: #00ff9d;
-  margin-bottom: 0.5rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0;
+  color: #0D1B2A;
 }
 
+/* TÍTULO */
 .perfil-titulo {
-  font-size: 1.1rem;
-  color: #9ca3af;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #415A77;
+  margin: 0 0 1rem 0;
 }
 
-/* Información */
+/* INFORMACIÓN */
 .perfil-info p {
-  margin: 0.6rem 0;
-  font-size: 1rem;
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #0D1B2A;
 }
 
 .perfil-label {
-  color: #00ff9d;
-  font-weight: bold;
+  font-weight: 600;
+  color: #0D1B2A;
 }
 
+/* LINKS */
 a {
-  color: #9ca3af;
+  color: #415A77;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
 a:hover {
-  color: #00ff9d;
-}
-.foto {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #00ff9d;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: #0D1B2A;
+  text-decoration: underline;
 }
