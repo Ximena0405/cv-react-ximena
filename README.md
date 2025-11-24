@@ -1,16 +1,54 @@
-# React + Vite
+# Mi React Vite Ximena Roldan Garcia en React
+# CV Ximena Roldan Garcia
+Este proyecto es una aplicación React donde presento mi información personal, habilidades, estudios, tecnologias y experiencia.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vista general del proyecto
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Instrucciones para ejecutar el proyecto
 
-## React Compiler
+1. Clonar este repositorio:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+En tu terminal usa el comando 
+"git clone https://github.com/Ximena0405/cv-react-ximena.git
 
-## Expanding the ESLint configuration
+2. Configurar espacio para tu proyecto 
+Entra a la carpeta he instala las dependencias con "cd nombre-proyecto". Luego instala las dependencias con "npm install", si trabajas con React.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Ejecuta tu proyecto
+Usa "npm run dev" y ejecuta tu proyecto en el local host
+
+# Historial de Commits y componentes
+
+
+# Commits del 20 de Noviembre de 2025
+
+* Inicio de carpeta y documentación con las dependencias de React y Vite
+  8481e65
+
+* feat: agrega componente Perfil y actualiza App  
+  0030ba6
+
+* feat: agregar componente Experiencia e integrarlo en App
+  95536b8
+
+# Commits del 21 de Noviembre de 2025
+
+* feat: agregar componente estudios e integrarlo en App
+  62c3f12
+
+# Commits del 24 de Noviembre de 2025
+
+* feat: componente StackTecnologias dinámico y con renderizado
+  b77c698
+
+* feat: actualizar estilos de cabecera para diseño más elegante y minimalista
+92b4569
+
+
+
