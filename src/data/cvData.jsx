@@ -45,7 +45,7 @@ export const cvData = {
       fecha: "2024 - Actual"
     },
     {
-      titulo: "Técnico en Analisis y desarrollo de software",
+      titulo: "Técnico en Programación de Software",
       institucion: "SENA",
       fecha: "2022-2023"
     }
