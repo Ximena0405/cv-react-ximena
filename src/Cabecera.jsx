@@ -1,34 +1,28 @@
-// import { CabeceraData } from "./Data"
-import "./cabecera.css"
-export default function Cabecera() {
-//   const { nombre, ocupacion, correo, telefono, ubicacion} = CabeceraData;
+export default function Cabecera({ nombre, profesion, correo, telefono, ubicacion, foto }) {
   return (
     <section className="perfil-container">
-        <div className="foto-container">
-            <img src="public/img/perfil.jpeg" alt="ximena" className="foto" />
-        </div>
+      <div className="foto-container">
+        <img src={foto} alt={nombre} className="foto" />
+      </div>
+
       <div className="perfil-card">
-        <h1 className="perfil-nombre">XIMENA ROLDAN GARCIA</h1>
-        <h2 className="perfil-titulo">
-          Estudiante
-        </h2>
+        <h1 className="perfil-nombre">{nombre}</h1>
+        <h2 className="perfil-titulo">{profesion}</h2>
 
         <div className="perfil-info">
           <p>
             <span className="perfil-label">Email:</span>{" "}
-            <a href="ximenaroldan367@gmail.com">
-              ximenaroldan367@gmail.com
-            </a>
+            <a href={`mailto:${correo}`}>{correo}</a>
           </p>
           <p>
             <span className="perfil-label">Teléfono:</span>{" "}
-            <a href="tel:+573150896523">3150896523</a>
+            <a href={`tel:${telefono}`}>{telefono}</a>
           </p>
           <p>
-            <span className="perfil-label">Ubicación:</span>Calle 37 #58 B-17
+            <span className="perfil-label">Ubicación:</span> {ubicacion}
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
