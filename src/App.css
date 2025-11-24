@@ -7,10 +7,13 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #f9f9fa;
+  background-color: #f5f5f7;
   color: #1C1C1C;
 }
 
+/* =======================
+   Root y contenedor general
+   ======================= */
 #root {
   width: 100%;
   margin: 0;
@@ -28,41 +31,99 @@ body, html {
 }
 
 /* =======================
-   Foto de perfil
+   Logos animados
    ======================= */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 0.3s;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 20px rgba(100, 108, 255, 0.6));
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 20px rgba(97, 218, 251, 0.7));
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* =======================
+   Tarjetas generales
+   ======================= */
+.card {
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  max-width: 900px;
+  width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* =======================
+   Enlaces
+   ======================= */
+a {
+  color: #556cd6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0d1b2a;
+  text-decoration: underline;
+}
+
+/* =======================
+   CABECERA / PERFIL
+   ======================= */
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.foto-container {
+  flex-shrink: 0;
+}
+
 .foto {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 4px solid #556cd6;
+  transition: transform 0.3s ease;
 }
 .foto:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-}
-
-/* =======================
-   Perfil general
-   ======================= */
-.perfil-container,
-.perfil-box {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem 2.5rem;
-  max-width: 900px;
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
 .perfil-card {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
 .perfil-nombre {
@@ -73,42 +134,59 @@ body, html {
 
 .perfil-titulo {
   font-size: 1.3rem;
-  font-weight: 500;
-  color: #4a4a4a;
-  margin: 0 0 0.8rem 0;
+  font-weight: 600;
+  color: #556cd6;
+  margin: 0 0 1rem 0;
 }
 
+/* Info contacto */
 .perfil-info p {
-  margin: 0.4rem 0;
+  margin: 0.5rem 0;
   font-size: 0.95rem;
 }
 
 .perfil-label {
   font-weight: 600;
-  color: #333;
 }
 
 /* =======================
-   Listas aptitudes y hobbies
+   SECCIÓN PERFIL DETALLADA
    ======================= */
+.perfil-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  max-width: 900px;
+  width: 100%;
+}
+
+.perfil-descripcion {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
 .perfil-subtitulo {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #4a4a4a;
+  color: #556cd6;
 }
 
-.perfil-lista,
-.perfil-lista-hobbies {
+.perfil-lista {
   list-style: none;
   padding-left: 0;
 }
 
 .perfil-lista li {
-  padding: 0.4rem 0;
-  border-bottom: 1px solid #eaeaea;
-  color: #1c1c1c;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
   font-size: 1rem;
+  color: #1c1c1c;
 }
 
 .perfil-lista-hobbies li {
@@ -117,59 +195,82 @@ body, html {
 }
 
 /* =======================
-   Experiencia y Estudios
+   EXPERIENCIA
    ======================= */
-.exp-container,
-.est-container {
+.exp-container {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 900px;
-  width: 100%;
-  padding: 2rem 1rem;
+  justify-content: center;
+  padding: 2rem;
 }
 
-.exp-card,
-.est-card {
-  background-color: #fefefe;
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.03);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.exp-card:hover,
-.est-card:hover {
-  transform: translateY(-2px);
+.exp-card {
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
 }
 
-.exp-title,
-.est-title {
-  font-size: 1.8rem;
+.exp-title {
+  font-size: 1.9rem;
   font-weight: 700;
-  color: #333;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #e0e0e0;
+  color: #556cd6;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #556cd6;
   padding-bottom: 0.3rem;
 }
 
-.exp-card h3,
+.exp-card h3 {
+  margin: 0 0 0.3rem 0;
+  font-weight: 600;
+}
+
+.exp-card p {
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+/* =======================
+   ESTUDIOS
+   ======================= */
+.est-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.est-card {
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+.est-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #556cd6;
+  border-bottom: 2px solid #556cd6;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
 .est-card h3 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
 
-.exp-card p,
 .est-card p {
-  margin: 0.2rem 0;
-  color: #4a4a4a;
   font-size: 1rem;
+  color: #333;
+  margin: 0.2rem 0;
 }
 
 /* =======================
-   Stack Tecnológico
+   STACK TECNOLÓGICO
    ======================= */
 .tecno-container {
   display: flex;
@@ -178,27 +279,31 @@ body, html {
 }
 
 .tecno-card {
-  background-color: #f5f6ff;
+  background-color: #f0f4ff;
   width: 100%;
   max-width: 900px;
   padding: 2.5rem 3rem;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
 .tecno-titulo {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1.8rem;
-  border-bottom: 2px solid #d0d0d0;
-  padding-bottom: 0.3rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #556cd6;
+  padding-bottom: 0.5rem;
+}
+
+.tecno-grupo {
+  margin-bottom: 1.5rem;
 }
 
 .tecno-subtitulo {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 0.7rem;
-  color: #4a4a4a;
+  color: #556cd6;
 }
 
 .tecno-lista {
@@ -207,14 +312,14 @@ body, html {
 }
 
 .tecno-lista li {
-  padding: 0.5rem 0;
+  padding: 0.6rem 0.5rem;
   font-size: 1rem;
-  color: #1c1c1c;
-  border-bottom: 1px solid #e0e0e0;
+  color: #1C1C1C;
+  border-bottom: 1px solid #a0b0ff;
   transition: 0.2s ease;
 }
 
 .tecno-lista li:hover {
   color: #556cd6;
-  transform: translateX(3px);
+  transform: translateX(4px);
 }
