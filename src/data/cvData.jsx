@@ -1,3 +1,5 @@
+// data/cvData.js
+
 export const cvData = {
   cabecera: {
     nombre: "Ximena Roldán García",
@@ -5,14 +7,27 @@ export const cvData = {
     correo: "ximenaroldan367@gmail.com",
     telefono: "3150896523",
     ubicacion: "Calle 37 #58 B-17",
-    foto: "public/img/perfil.jpeg"
+    // En Vite: si está dentro de /public/img/
+    foto: "/img/perfil.jpeg"
   },
 
   perfil: {
     descripcion:
       "Soy una estudiante de programación con interés en desarrollo web, diseño limpio y buenas prácticas. Me gusta aprender nuevas tecnologías y aplicarlas en proyectos personales.",
-    aptitudes: ["Trabajo en equipo", "Resolución de problemas", "Aprendizaje rápido", "Creatividad", "Pensamiento lógico"],
-    hobbies: ["Aprender tecnologías", "Diseño web", "Documentar proyectos", "Música", "Lectura"]
+    aptitudes: [
+      "Trabajo en equipo",
+      "Resolución de problemas",
+      "Aprendizaje rápido",
+      "Creatividad",
+      "Pensamiento lógico"
+    ],
+    hobbies: [
+      "Aprender tecnologías",
+      "Diseño web",
+      "Documentar proyectos",
+      "Música",
+      "Lectura"
+    ]
   },
 
   experiencia: [
@@ -55,5 +70,13 @@ export const cvData = {
     Lenguajes: ["HTML5", "CSS", "JavaScript", "Python", "PHP", "Node.js"],
     Frameworks: ["React", "Express", "Tailwind CSS"],
     Herramientas: ["Git & GitHub", "Visual Studio Code", "MySQL", "MongoDB"]
-  }
+  },
+
+  habilidades: [
+    "Trabajo en equipo",
+    "Creatividad",
+    "Comunicación",
+    "Adaptabilidad",
+    "Organización"
+  ]
 };
